@@ -12,6 +12,7 @@
 
 html {
     font-size: 65.5%;
+    overflow: hidden;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     overflow-x: hidden;
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 
 header {
