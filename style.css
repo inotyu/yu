@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 65.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+[class^="icon-"]
+
+.icon-facebook {
+    color: #3b5998;
+}
+
+.icon-twitter {
+    color: #1da1f2;
+}
+
+.icon-instagram {
+    color: #e4405f;
+}
+
+.icon-linkedin {
+    color: #0077b5;
+}
+
+.icon-github {
+    color: #333;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.menu-icon:hover {
+    background-color: #7e42a8;
+}
+
+.menu-icon.open {
+    transform: rotate(90deg);
+}
+
+.menu a {
+    display: block;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #7e42a8;
+    color: white;
+}
+
+
+nav a:first-child {
+    border-bottom: none;
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+.menu a:hover {
+    background-color: #7e42a8;
+    color: white;
+}
+
+.highlight-text {
+    font-size: 20rem;
+    font-weight: 500; /* Deixa o texto mais destacado */
+    line-height: 1.8; /* Ajusta o espaçamento entre linhas */
+    color: #ffffff; /* Mantém o texto branco */
+    text-shadow: 1px 1px 5px #7e42a8; /* Adiciona um leve contorno para destaque */
+    margin-bottom: 2rem; /* Ajusta o espaçamento inferior */
+}
+
+
+.menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    list-style: none;
+    transform: translateY(-100%);
+    transition: 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.logo {
+    font-size: 3rem;
+    color: #7e42a8;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #7e42a8;
+    border-bottom: 3px solid #7e42a8;
+}
+
+@media (max-width: 995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #7e42a8;
+        border-bottom: 3px solid #7e42a8;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+    }
+    nav.active {
+        display: block;
+    }
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #7e42a8;
+    }
+}
+/* Estilo para o parágrafo dentro da seção de habilidades */
+#skills p {
+    font-size: 2.5rem;  /* Aumenta o tamanho da fonte */
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+    font-weight: 450; /* Ajusta o peso da fonte para tornar o texto mais legível */
+    margin-bottom: 2rem; /* Adiciona espaçamento abaixo do parágrafo */
+}
+
+#education p {
+    font-size: 2.5rem;  /* Aumenta o tamanho da fonte */
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+    font-weight: 450; /* Ajusta o peso da fonte para tornar o texto mais legível */
+    margin-bottom: 2rem; /* Adiciona espaçamento abaixo do parágrafo */
+}
+
+#experience p {
+    font-size: 3rem;  /* Aumenta o tamanho da fonte */
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+    font-weight: 450; /* Ajusta o peso da fonte para tornar o texto mais legível */
+    margin-bottom: 2rem; /* Adiciona espaçamento abaixo do parágrafo */
+}
+
+#contact p {
+    font-size: 2.5rem;  /* Aumenta o tamanho da fonte */
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+    font-weight: 450; /* Ajusta o peso da fonte para tornar o texto mais legível */
+    margin-bottom: 2rem; /* Adiciona espaçamento abaixo do parágrafo */
+}
+
+
+/* Para listas dentro de qualquer seção, sem alterar o HTML */
+section ul {
+    font-size: 2rem;  
+    line-height: 1.5;   
+    margin-top: 1.5rem; 
+    text-decoration: none;
+}
+
+section ul li {
+    padding-left: 1rem;    
+    font-weight: 800;     
+    list-style-type: disc; 
+    text-decoration: none;
+}
+
+section ul li strong {
+    color: #7e42a8; 
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+    flex-direction: row-reverse;
+}
+
+.b {
+  color: #7e42a8
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: #7e42a8;
+    font-weight: 500px;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+nav {
+    margin-top: -1.5rem;
+}
+
+.home-content p {
+    font-size: 2rem;
+    font-weight: 650;
+    margin-top: 10px; 
+  
+}
+
+.home-img {
+    border-radius: 50%;
+}
+.home-content span {
+    color: #7e42a8;
+    font-weight: 500px;
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s linear;
+    border: 0.4rem solid transparent; /* Define a largura da borda */
+    background-image: linear-gradient(rgb(251, 178, 255),rgb(251, 178, 255)),
+                      linear-gradient(45deg, #000000, #7e42a8);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    animation: border-animation 1.5s linear infinite;
+    top: -0.10rem;
+}
+
+@keyframes border-animation {
+    0% {
+        background-image: linear-gradient(#a558dc, #a558dc),
+                          linear-gradient(45deg, #a558dc, #7e42a8);
+    }
+    50% {
+        background-image: linear-gradient(#a558dc, #a558dc),
+                          linear-gradient(45deg, #7e42a8, #a558dc);
+    }
+    100% {
+        background-image: linear-gradient(#a558dc, #a558dc),
+                          linear-gradient(45deg,#a558dc, #7e42a8);
+    }
+}
+
+#expandedImageContainer {
+    display: none; /* Esconde o contêiner inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Garante que está sobre outros elementos */
+}
+
+#expandedImageContainer img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+}
+
+
+.home-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.home-content a {
+    text-decoration: none;
+}
+
+
+.home-content li {
+    font-weight: 1000;
+}
+
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #7e42a8;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #7e42a8;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #7e42a8;
+    box-shadow: 0 0 25px #7e42a8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #7e42a8;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #7e42a8;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #7e42a8;
+    color: black;
+    box-shadow: 0 0 25px #7e42a8;
+}
+
+.typing-text{
+    font-size: 35px;
+    font-weight: 600;
+    min-width: 280px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 800px;
+
+}
+.typing-text span{
+    position: relative;
+    white-space: nowrap;
+}
+.typing-text span::before{
+    content: "Desenvolvedor de Software";
+    color: #7e42a8;
+    animation: words 10s infinite;
+}
+.typing-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+ 
+  
+}
+
+.redes a {
+    color: white
+}
+
+
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #7e42a8;
+    }
+}
+@keyframes words{
+    0%, 20%{
+        content: "Estudante";
+    }
+    21%, 40%{
+        content: "Desenvolvedor Front-End";
+    }
+    41%, 60%{
+        content: "Desenvolvedor Back-End";
+    }
+    61%, 80%{
+        content: "Desenvolvedor Full-Stack";
+    }
+}
+@media (max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
