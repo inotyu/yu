@@ -1,3 +1,6 @@
+document.documentElement.style.overflow = 'hidden';  // Para o elemento <html>
+document.body.style.overflow = 'hidden';  // Para o elemento <body>
+
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll("header nav a");
   const sections = document.querySelectorAll("section");
