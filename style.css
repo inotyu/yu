@@ -522,7 +522,7 @@ section.visible {
     header, body {
         scroll-behavior: smooth;
         overflow: visible;
-        width: 101%;
+        width: auto;
     }
     .social-icons a {
         display: inline-flex;
