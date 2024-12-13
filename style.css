@@ -475,12 +475,12 @@ section.visible {
         content: "Desenvolvedor Full-Stack";
     }
 }
-@media (max-width: 1000px){
+@media (max-width: 725lpx){
     .home{
         gap: 4rem;
     }
 }
-@media(max-width:995px){
+@media(max-width:725px){
     .home{
         flex-direction: column;
         margin: 5rem 4rem;
@@ -494,6 +494,169 @@ section.visible {
     .home-img img{
         width: 70vw;
         margin-top: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        
+        font-size: 50%; /* Ajusta a escala de fontes em dispositivos móveis */
+    }
+
+    body {
+        background-color: #161616;
+        color: white;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Impede que a página saia da tela horizontalmente */
+        word-wrap: break-word; /* Garante que as palavras longas quebrem */
+        overflow-wrap: break-word;
+    }
+   
+    header {
+        position: fixed;
+        padding: 1rem 5%;
+        width: 100%;
+        box-sizing: border-box; /* Garante que o padding não quebre o layout */
+    }
+    header, body {
+        overflow: visible;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        height: 250%;
+        margin-right: auto;
+        margin-left: 400px;
+        border-right: 500px;
+        border-left: 500px;
+        border-radius: none;
+        border-radius: 0 0 0 0;
+    }
+    nav.active {
+        display: none;
+        left: 70px;
+        margin-right: 100px;
+        margin-right: 100%;
+        border: none;
+        border-radius: none;
+    }
+    nav a {
+        display: block;
+        font-size: 15px;
+        margin: 3rem 0;
+        left: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav a:hover,
+    nav a.active {
+        padding: 0;
+        border-radius: 0;
+        border-bottom: 0;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1rem;
+        width: 100%;
+        background-color: #161616;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        width: 100%;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    .home-img img {
+        width: 65%; 
+        align-items: center;
+        align-content: center;
+        left: 70px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .home-content h1 {
+        font-size: 4rem;
+        margin: 0;
+        text-align: center;
+        word-wrap: break-word; /* Garante que o título quebre se necessário */
+    }
+    .home-content{
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+    .home-content h3 {
+        font-size: 3rem;
+        margin: 0 ; 
+        left: 300px;
+        word-wrap: break-word;
+    }
+
+    .home-content p {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        max-width: 100%;
+        word-wrap: break-word; /* Para garantir que as palavras longas quebrem */
+        overflow-wrap: break-word;
+        word-wrap: break-word; /* Quebra o texto longo */
+    }
+
+    
+    .highlight-text {
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+
+    section ul {
+        font-size: 2rem;
+        padding-left: 2rem;
+
+    }
+
+    section ul li {
+        padding-left: 1rem;
+    }
+    
+    .social-icons a {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    /* Ajuste o texto nas seções */
+    #skills p,
+    #education p,
+    #experience p,
+    #contact p {
+        font-size: 2rem;
+        line-height: 1.6; /* Melhora a legibilidade */
+        word-wrap: break-word; /* Garante que o texto quebre dentro do container */
+    }
+
+    /* Ajusta o botão "Contrate-me" */
+    .home-content .btn {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
     }
 }
 
