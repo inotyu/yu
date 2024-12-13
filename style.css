@@ -12,7 +12,7 @@
 
 html {
     font-size: 65.5%;
-    overflow: hidden;
+    
 }
 
 body {
@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
     background-color: black;
     color: white;
-    overflow: hidden;
+    
 }
 
 header {
@@ -520,7 +520,9 @@ section.visible {
         box-sizing: border-box; /* Garante que o padding não quebre o layout */
     }
     header, body {
+        scroll-behavior: smooth;
         overflow: visible;
+        width: 101%;
     }
     nav {
         display: flex;
