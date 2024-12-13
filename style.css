@@ -463,7 +463,7 @@ section.visible {
 }
 @keyframes words{
     0%, 20%{
-        content: "Estudante";
+        content: "Desenvolvedor Full-Stack";
     }
     21%, 40%{
         content: "Desenvolvedor Front-End";
@@ -472,15 +472,15 @@ section.visible {
         content: "Desenvolvedor Back-End";
     }
     61%, 80%{
-        content: "Desenvolvedor Full-Stack";
+        content: "Estudante";
     }
 }
-@media (max-width: 725lpx){
+@media (max-width: 1080px){
     .home{
         gap: 4rem;
     }
 }
-@media(max-width:725px){
+@media(max-width: 1080px){
     .home{
         flex-direction: column;
         margin: 5rem 4rem;
@@ -497,7 +497,7 @@ section.visible {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     html {
         
         font-size: 50%; /* Ajusta a escala de fontes em dispositivos móveis */
